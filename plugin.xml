@@ -30,13 +30,13 @@
 
     <description>Prints HTML content</description>
 
-    <repo>https://github.com/katzer/cordova-plugin-printer.git</repo>
+    <repo>https://github.com/master-aralco/cordova-plugin-printer.git</repo>
 
     <keywords>appplant, printer, cordova</keywords>
 
     <license>Apache 2.0</license>
 
-    <author>Sebastián Katzer</author>
+    <author>Aralco</author>
 
     <!-- cordova -->
     <engines>
@@ -94,9 +94,8 @@
             </feature>
         </config-file>
 
-        <preference name="ANDROID_SUPPORT_V4_VERSION" default="28.+"/>
-
-        <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
+        <framework src="androidx.print:print:1.1.0" />
+        <framework src="androidx.annotation:annotation:1.7.1" />
 
         <source-file src="src/android/PrintAdapter.java"
             target-dir="src/de/appplant/cordova/plugin/printer" />
